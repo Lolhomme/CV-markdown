@@ -80,14 +80,49 @@
     - Scrum
     - Agile
     - Shape up
+    - Prompt engineering
+
+!!! danger "AI tools"
+
+    - Cursor
+    - Claude Code
+
 </div>
 
 ---
 
 ## Professional experience
 
-!!! info "February 2024 - June 2024"
-    ### Dougs
+!!! info "August 2025 - March 2026" ### Naboo
+
+    **Project:** Contribution to the Naboo platform for group experience booking.
+
+    **Stack:** Node.js - Typescript - React - Storybook - Datadog
+
+    <div class="grid cards" markdown>
+    !!! quote "Team"
+        - ClientXP
+
+    !!! example "Design and development"
+        - Built the quote editor end-to-end: commission permissions, field prefill and locking, date picker, fees prefill, partner brief, drag/drop improvements and multiple UX/QA passes.
+        - Added price/night and total price display on search results, including a dedicated price popover.
+        - Booking flow v2: enabled carbon calculator, autonomous bookings, and a new success modal.
+        - Full-stack hour picking feature: new UI components integrated into the booking form, back-office field added with unit and E2E tests.
+        - Quote and transaction improvements: step badge, download quote files button, quantity autofill from participant count, status badge in admin view.
+        - Improved blog slider with dynamic article fetching (replacing hardcoded content).
+
+    !!! info "Infrastructure and deployment"
+        - Github
+        - Set up Datadog dashboards and monitors for ClientXP
+
+    !!! abstract "Organization/methodology"
+        - Pair programming
+        - Various daily and weekly meetings
+        - Wrote and maintained technical documentation in Markdown
+        - Integrated Claude AI skills into the repo tooling to keep documentation up to date
+    </div>
+
+!!! info "February 2024 - June 2024" ### Dougs
 
     **Project:** Contribution to Dougs' application: online chartered accountants.
 

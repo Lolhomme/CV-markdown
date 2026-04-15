@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
+  "[markdown]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.defaultFormatter": null,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "never",
+      "source.fixAll.markdownlint": "never"
+    }
+  },
+  "markdownlint.config": {
+    "default": false
+  },
+  "prettier.disableLanguages": ["markdown"]
+}

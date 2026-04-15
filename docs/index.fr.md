@@ -80,11 +80,50 @@
     - Scrum
     - Agile
     - Shape up
+    - Prompt engineering
+
+!!! danger "Outils IA"
+
+    - Cursor
+    - Claude Code
+
 </div>
 
 ---
 
 ## Experiences professionnelles
+
+!!! info "Août 2025 - Mars 2026"
+    ### Naboo
+
+    **Projet:** Contribution à la plateforme Naboo de réservation d'expériences en groupe.
+
+    **Stack:** Node.js - Typescript - React - Storybook - Datadog
+
+    <div class="grid cards" markdown>
+    !!! quote "Équipe"
+        - ClientXP
+        - Enablers
+        - Marketplace
+
+    !!! example "Conception et développement"
+        - Développement de l'éditeur de devis de bout en bout : permissions sur les commissions, pré-remplissage et verrouillage des champs, date picker, pré-remplissage des frais, brief partenaire, améliorations du drag/drop et multiples passes UX/QA.
+        - Ajout du prix par nuit et du prix total sur les résultats de recherche, avec un popover de prix dédié.
+        - Flow de réservation v2 : activation du calculateur carbone, réservations autonomes et nouvelle modale de succès.
+        - Fonctionnalité de sélection d'horaire full-stack : nouveaux composants UI intégrés dans le formulaire de réservation, champ ajouté côté back-office avec tests unitaires et E2E.
+        - Améliorations des devis et transactions : badge d'étape, bouton de téléchargement des fichiers de devis, remplissage automatique de la quantité depuis le nombre de participants, badge de statut dans la vue admin.
+        - Amélioration du slider blog avec récupération dynamique des articles (remplacement du contenu codé en dur).
+
+    !!! info "Infrastructure et déploiement"
+        - Github
+        - Mise en place de dashboards et monitors Datadog pour ClientXP
+
+    !!! abstract "Organisation/méthodologie"
+        - Pair programming
+        - Différentes réunions quotidiennes et hebdomadaires
+        - Rédaction et maintenance de la documentation technique en Markdown
+        - Intégration de skills Claude dans les outils du repo pour maintenir la documentation à jour
+    </div>
 
 !!! info "Février 2024 - Juin 2024"
     ### Dougs
