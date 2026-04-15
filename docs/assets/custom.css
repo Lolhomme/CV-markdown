@@ -33,18 +33,14 @@
 }
 
 @media print {
-  .md-header, .md-sidebar, .md-footer, nav, .md-nav, .md-tabs {
+  .md-sidebar--primary {
     display: none !important;
   }
+
   .md-content, .md-main__inner, .md-content__inner {
     max-width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-  }
-
-  .grid.cards {
-    display: block !important;
-    width: 100% !important;
   }
 
   .grid.cards > *,
@@ -52,45 +48,6 @@
   .md-typeset .admonition {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-  }
-
-  .grid.cards,
-  .grid.cards > * {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .grid.cards > * {
-    min-height: 0 !important;
-  }
-
-  @page:first {
-    margin-top: 0;
-  }
-
-  .md-typeset .admonition,
-  .md-typeset details,
-  .md-typeset .admonition-title,
-  .grid.cards > * {
-    background: #fff !important;
-    color: #222 !important;
-    border: none !important;
-    box-shadow: none !important;
-    break-inside: avoid !important;
-    page-break-inside: avoid !important;
-  }
-
-  .md-typeset .admonition,
-  .md-typeset details {
-    box-shadow: none !important;
-    border-radius: 0 !important;
-  }
-
-  .grid.cards > * {
-    margin-bottom: 12pt !important;
-    padding: 8pt !important;
-    background: #fff !important;
-    border: none !important;
   }
 
   h2 {
