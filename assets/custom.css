@@ -1,0 +1,322 @@
+/* Make main content area full width */
+.md-content,
+.md-main__inner,
+.md-content__inner {
+  max-width: 100% !important;
+}
+
+/* Custom colors for each admonition type */
+.md-typeset .admonition.abstract {
+  border-color: #8bc34a;
+}
+.md-typeset .admonition.example {
+  border-color: #3f51b5;
+}
+.md-typeset .admonition.note {
+  border-color: #ff9800;
+}
+.md-typeset .admonition.tip {
+  border-color: #e91e63;
+}
+
+.md-header {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.md-header__inner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+}
+
+@media print {
+  .md-sidebar--primary {
+    display: none !important;
+  }
+
+  .md-content,
+  .md-main__inner,
+  .md-content__inner {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .grid.cards > *,
+  .admonition,
+  .md-typeset .admonition {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  h2 {
+    page-break-before: auto !important;
+    break-before: auto !important;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+  h2 + .grid.cards > *,
+  h2 + .admonition {
+    page-break-before: avoid !important;
+    break-before: avoid !important;
+  }
+}
+
+/* ============================================================
+   CLASSIC RESUME PAGE
+   ============================================================ */
+
+.resume-page {
+  display: flex;
+  max-width: 900px;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  min-height: 297mm;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #222;
+  background: #fff;
+}
+
+.resume-left {
+  width: 30%;
+  background-color: #e0e0e0;
+  padding: 2rem 1.5rem;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.resume-right {
+  width: 70%;
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+}
+
+/* Reset MkDocs overrides inside resume */
+.resume-page p {
+  margin: 0 0 0.25rem;
+}
+.resume-page ul {
+  margin: 0;
+  padding: 0;
+}
+.resume-page li {
+  margin: 0.1rem 0;
+}
+.resume-page a {
+  color: #3d5a99;
+  text-decoration: none;
+}
+
+/* Section headings */
+.resume-section {
+  margin-bottom: 1.5rem;
+}
+.resume-section-title {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+.resume-left .resume-section-title {
+  color: #3d5a99;
+}
+.resume-right .resume-section-title {
+  color: #333;
+}
+
+/* Left column text */
+.resume-left p,
+.resume-left li {
+  font-size: 0.8rem;
+  color: #333;
+  line-height: 1.55;
+}
+
+/* Right column: name block */
+.resume-name {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin: 0 0 0.3rem;
+  color: #111;
+}
+.resume-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 0.2rem;
+  color: #333;
+}
+.resume-tagline {
+  font-size: 0.82rem;
+  color: #666;
+  margin: 0 0 1.75rem;
+}
+
+/* Right column: entries */
+.resume-entry {
+  margin-bottom: 0.6rem;
+}
+.resume-entry strong {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.resume-date {
+  font-size: 0.78rem;
+  color: #666;
+}
+.resume-entry p {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0.1rem 0 0;
+}
+
+/* Skills list */
+.resume-skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.resume-skills li {
+  font-size: 0.82rem;
+  color: #333;
+  padding: 0.1rem 0;
+}
+.resume-skills li::before {
+  content: "– ";
+  color: #888;
+}
+
+/* ============================================================
+   PRINT — resume pages: hide all MkDocs chrome, show only resume
+   ============================================================ */
+@page {
+  margin: 0.8cm;
+}
+
+@media print {
+  body:has(.resume-page) .md-content__inner > *:not(.resume-page) {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  body:has(.resume-page) .md-header,
+  body:has(.resume-page) .md-footer,
+  body:has(.resume-page) .md-tabs,
+  body:has(.resume-page) .md-sidebar {
+    display: none !important;
+  }
+
+  body:has(.resume-page) .md-main,
+  body:has(.resume-page) .md-main__inner,
+  body:has(.resume-page) .md-content,
+  body:has(.resume-page) .md-content__inner {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .resume-page {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    display: flex;
+  }
+
+  .resume-left {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    padding: 0.8rem !important;
+    width: 30% !important;
+  }
+
+  .resume-right {
+    padding: 0.8rem 1.2rem !important;
+    width: 70% !important;
+  }
+
+  .resume-name {
+    font-size: 1.8rem !important;
+    margin: 0 0 0.1rem !important;
+  }
+
+  .resume-title {
+    font-size: 0.9rem !important;
+    margin: 0 0 0.1rem !important;
+  }
+
+  .resume-tagline {
+    font-size: 0.72rem !important;
+    margin: 0 0 0.6rem !important;
+  }
+
+  .resume-section {
+    margin-bottom: 0.6rem !important;
+  }
+
+  .resume-section-title {
+    font-size: 0.58rem !important;
+    margin-bottom: 0.3rem !important;
+    padding-bottom: 0.15rem !important;
+  }
+
+  .resume-entry {
+    margin-bottom: 0.3rem !important;
+  }
+
+  .resume-entry strong {
+    font-size: 0.75rem !important;
+  }
+
+  .resume-date {
+    font-size: 0.7rem !important;
+  }
+
+  .resume-entry p {
+    font-size: 0.72rem !important;
+    margin: 0 !important;
+  }
+
+  .resume-left p,
+  .resume-left li {
+    font-size: 0.7rem !important;
+    margin: 0 !important;
+    line-height: 1.4 !important;
+  }
+
+  .resume-skills {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .resume-skills li {
+    font-size: 0.72rem !important;
+    padding: 0.05rem 0 !important;
+    list-style: none !important;
+  }
+}
