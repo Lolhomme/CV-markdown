@@ -18,6 +18,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+
 plugins:
   - i18n:
       docs_structure: suffix
@@ -25,10 +26,16 @@ plugins:
         - locale: en
           name: English
           build: true
+          nav:
+            - Skills & Experience: index.en.md
+            - Resume: resume.en.md
         - locale: fr
           default: true
           name: Français
           build: true
+          nav:
+            - Compétences & Parcours: index.fr.md
+            - CV: resume.fr.md
 extra:
   generator: false
 extra_css:

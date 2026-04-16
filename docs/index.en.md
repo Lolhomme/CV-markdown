@@ -50,6 +50,7 @@
 
     - Express
     - NestJS
+    - GraphQL
     - React
     - Angular
     - VueJS
@@ -80,7 +81,7 @@
     - Scrum
     - Agile
     - Shape up
-    - Prompt engineering
+    - AI Augmented Software Engineering
 
 !!! danger "AI tools"
 
@@ -93,7 +94,8 @@
 
 ## Professional experience
 
-!!! info "August 2025 - March 2026" ### Naboo
+!!! info "September 2025 - March 2026"
+    ### Naboo
 
     **Project:** Contribution to the Naboo platform for group experience booking.
 
@@ -102,6 +104,8 @@
     <div class="grid cards" markdown>
     !!! quote "Team"
         - ClientXP
+        - Enablers
+        - Marketplace
 
     !!! example "Design and development"
         - Built the quote editor end-to-end: commission permissions, field prefill and locking, date picker, fees prefill, partner brief, drag/drop improvements and multiple UX/QA passes.
@@ -122,7 +126,8 @@
         - Integrated Claude AI skills into the repo tooling to keep documentation up to date
     </div>
 
-!!! info "February 2024 - June 2024" ### Dougs
+!!! info "February 2024 - June 2024"
+    ### Dougs
 
     **Project:** Contribution to Dougs' application: online chartered accountants.
 

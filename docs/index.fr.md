@@ -50,13 +50,14 @@
 
     - Express
     - NestJS
+    - GraphQL
     - React
     - Angular
     - VueJS
 
 !!! success "Testing"
 
-    - Mochai
+    - Mocha
     - Chai
     - Jest
 
@@ -71,7 +72,7 @@
 !!! warning "Base de données"
 
     - MySQL
-    - PostgreSQl
+    - PostgreSQL
     - MongoDB
     - S3
 
@@ -80,7 +81,7 @@
     - Scrum
     - Agile
     - Shape up
-    - Prompt engineering
+    - Ingénierie Logicielle Augmentée par l'IA
 
 !!! danger "Outils IA"
 
@@ -93,7 +94,7 @@
 
 ## Experiences professionnelles
 
-!!! info "Août 2025 - Mars 2026"
+!!! info "Septembre 2025 - Mars 2026"
     ### Naboo
 
     **Projet:** Contribution à la plateforme Naboo de réservation d'expériences en groupe.
